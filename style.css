@@ -393,6 +393,12 @@ section { padding: 7rem 2rem; }
     margin-bottom: 0.35rem;
 }
 .about-card-val { font-size: 0.85rem; font-weight: 600; }
+.about-card-desc {
+    color: var(--text-2);
+    font-size: 0.72rem;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+}
 
 /* ===== STACK ===== */
 .stack-row {
@@ -659,8 +665,17 @@ section { padding: 7rem 2rem; }
     color: var(--text-2);
     box-shadow: var(--shadow);
     transition: border-color var(--transition), background 0.35s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
 }
 .rank-pill:hover { border-color: var(--border-h); }
+.rank-sub {
+    font-family: var(--font);
+    font-size: 0.62rem;
+    color: var(--text-3);
+    opacity: 0.8;
+}
 
 /* ===== CONTACT ===== */
 .contact-wrap { text-align: center; }

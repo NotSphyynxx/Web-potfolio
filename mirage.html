@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIR4GE | Moroccan CyberSecurity Cult</title>
+    <meta name="description" content="MIR4GE — Moroccan CyberSecurity Cult. Stand with the shadows, or be marked as an enemy.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+        img-src 'self' data:;
+        connect-src 'self';
+        frame-src 'none';
+        object-src 'none';
+        base-uri 'self';
+        form-action 'none';
+    ">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl0GPmkFJ7+0ydLjSMdO0bkEbAUCWHA30b1bQWncdS7eJ4E5uWZKFxsIk21voMfMcKnflcii4dQA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="mirage.css">
+</head>
+<body>
+    <canvas id="matrix-canvas"></canvas>
+    <div class="scanline"></div>
+    <div class="vignette"></div>
+
+    <nav class="m-nav">
+        <a href="index.html" class="back-link"><i class="fas fa-chevron-left"></i> BACK TO ORIGIN</a>
+        <div class="m-logo">[ MIR4GE ]</div>
+    </nav>
+
+    <main class="m-container">
+        <!-- Hero Section -->
+        <section class="m-hero">
+            <h1 class="glitch" data-text="We are MIR4GE.">We are MIR4GE.</h1>
+            <p class="m-subhead">Moroccan CyberSecurity Cult</p>
+            <p class="m-subhead-sub">Stand with the shadows, or be marked as an enemy.</p>
+        </section>
+
+        <!-- Core Lineup -->
+        <section class="m-section">
+            <h2 class="m-section-title">> THE_CORE_LINEUP</h2>
+            <div class="m-roster-grid">
+                <!-- Player 1 -->
+                <div class="m-id-card">
+                    <div class="id-header">
+                        <span class="id-status online"></span>
+                        <span class="id-label">ID: 001</span>
+                    </div>
+                    <div class="id-body">
+                        <div class="id-avatar"><img src="team_sphynx.jpg" alt="Sphynx"></div>
+                        <div class="id-info">
+                            <h3 class="id-name">Sphynx</h3>
+                            <span class="id-real-name">Ismail Larhrib</span>
+                            <div class="id-role">Founder & Team Captain</div>
+                        </div>
+                    </div>
+                    <div class="id-footer">
+                        <span class="id-spec-label">SPECIALTIES:</span>
+                        <div class="id-specs">Digital Forensics, Crypto & AppSec</div>
+                    </div>
+                </div>
+
+                <!-- Player 2 -->
+                <div class="m-id-card">
+                    <div class="id-header">
+                        <span class="id-status online"></span>
+                        <span class="id-label">ID: 002</span>
+                    </div>
+                    <div class="id-body">
+                        <div class="id-avatar"><img src="team_rad.png" alt="RAD"></div>
+                        <div class="id-info">
+                            <h3 class="id-name">RAD</h3>
+                            <span class="id-real-name">Asaad Naji</span>
+                            <div class="id-role">Core Member</div>
+                        </div>
+                    </div>
+                    <div class="id-footer">
+                        <span class="id-spec-label">SPECIALTIES:</span>
+                        <div class="id-specs">Web Exploitation, Pwn</div>
+                    </div>
+                </div>
+
+                <!-- Player 3 -->
+                <div class="m-id-card">
+                    <div class="id-header">
+                        <span class="id-status online"></span>
+                        <span class="id-label">ID: 003</span>
+                    </div>
+                    <div class="id-body">
+                        <div class="id-avatar"><img src="team_r0z0.jpg" alt="r0z0"></div>
+                        <div class="id-info">
+                            <h3 class="id-name">r0z0</h3>
+                            <span class="id-real-name">Abderrahman Abdoullah</span>
+                            <div class="id-role">Co-Founder</div>
+                        </div>
+                    </div>
+                    <div class="id-footer">
+                        <span class="id-spec-label">SPECIALTIES:</span>
+                        <div class="id-specs">Advanced Web Exploitation</div>
+                    </div>
+                </div>
+
+                <!-- Player 4 -->
+                <div class="m-id-card">
+                    <div class="id-header">
+                        <span class="id-status online"></span>
+                        <span class="id-label">ID: 004</span>
+                    </div>
+                    <div class="id-body">
+                        <div class="id-avatar"><img src="team_suleif.png" alt="Suleif"></div>
+                        <div class="id-info">
+                            <h3 class="id-name">Suleif</h3>
+                            <span class="id-real-name">Suleiman Hafid</span>
+                            <div class="id-role">Core Member</div>
+                        </div>
+                    </div>
+                    <div class="id-footer">
+                        <span class="id-spec-label">SPECIALTIES:</span>
+                        <div class="id-specs">Rev & Pwn</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Team Gallery -->
+        <section class="m-section">
+            <h2 class="m-section-title">> IN_THE_FIELD</h2>
+            <div class="m-slideshow">
+                <div class="slideshow-track" id="slideshowTrack">
+                    <div class="slide"><img src="team_photo1.jpg" alt="MIR4GE competing"><div class="slide-caption">MIR4GE</div></div>
+                    <div class="slide"><img src="team_photo2.jpg" alt="MIR4GE team"><div class="slide-caption">MIR4GE</div></div>
+                    <div class="slide"><img src="team_photo3.png" alt="MIR4GE at INPT Labs"><div class="slide-caption">INPT Labs</div></div>
+                    <div class="slide"><img src="me.jpg" alt="Sphynx"><div class="slide-caption">MIR4GE</div></div>
+                    <div class="slide"><img src="team_photo4.jpg" alt="MIR4GE"><div class="slide-caption">MIR4GE</div></div>
+                    <div class="slide"><img src="team_photo5.png" alt="MIR4GE CTF"><div class="slide-caption">MIR4GE</div></div>
+                    <div class="slide"><img src="team_photo6.png" alt="MIR4GE"><div class="slide-caption">MIR4GE</div></div>
+                </div>
+                <button class="slide-btn slide-prev" onclick="moveSlide(-1)">&#8249;</button>
+                <button class="slide-btn slide-next" onclick="moveSlide(1)">&#8250;</button>
+                <div class="slide-dots" id="slideDots"></div>
+            </div>
+        </section>
+
+        <!-- Classified Roster -->
+        <section class="m-section classified-zone">
+            <div class="classified-content">
+                <i class="fas fa-lock classified-icon"></i>
+                <h2 class="m-section-title redacted">Extended Roster [CLASSIFIED]</h2>
+                <p class="classified-text">The rest of MIR4GE operates in the shadows. Want to see the full roster, shadow our operations, or prove you have what it takes to join our ranks?</p>
+                <a href="https://discord.gg/rENj3DWMqK" target="_blank" class="btn-terminal">[ INITIATE CONNECTION // JOIN DISCORD ]</a>
+            </div>
+        </section>
+
+        <!-- Hall of Fame -->
+        <section class="m-section">
+            <h2 class="m-section-title">> HALL_OF_FAME</h2>
+            <div class="m-trophy-list">
+                <div class="m-trophy-item">
+                    <div class="trophy-rank gold">1st</div>
+                    <div class="trophy-details">
+                        <h4>IDEH CTF</h4>
+                        <p>1st Place Overall</p>
+                    </div>
+                </div>
+                <div class="m-trophy-item">
+                    <div class="trophy-rank bronze">3rd</div>
+                    <div class="trophy-details">
+                        <h4>Blockchain & Cryptocurrency Days CTF</h4>
+                        <p>3rd Place National Finals</p>
+                    </div>
+                </div>
+                <div class="m-trophy-item">
+                    <div class="trophy-rank cyan"><i class="fas fa-globe"></i></div>
+                    <div class="trophy-details">
+                        <h4>0xL4ugh CTF v5</h4>
+                        <p>Global Top 25 (22nd Global, 1st in Morocco)</p>
+                    </div>
+                </div>
+                <div class="m-trophy-item">
+                    <div class="trophy-rank cyan"><i class="fas fa-terminal"></i></div>
+                    <div class="trophy-details">
+                        <h4>Active Competitor</h4>
+                        <p>+100 CTFs Played Worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="m-footer">
+        <p>© 2026 MIR4GE.</p>
+    </footer>
+
+    <script src="mirage.js"></script>
+</body>
+</html>
