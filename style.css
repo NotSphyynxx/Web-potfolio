@@ -153,8 +153,8 @@ nav.scrolled { border-bottom-color: var(--border); }
 }
 .nav-links a:hover { color: var(--text); }
 
-/* Theme toggle */
-.theme-toggle {
+/* Theme & Lang toggle */
+.theme-toggle, .lang-toggle {
     width: 36px;
     height: 36px;
     border-radius: 10px;
@@ -167,8 +167,14 @@ nav.scrolled { border-bottom-color: var(--border); }
     justify-content: center;
     font-size: 0.85rem;
     transition: all var(--transition);
+    text-decoration: none;
 }
-.theme-toggle:hover {
+.lang-toggle {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.theme-toggle:hover, .lang-toggle:hover {
     border-color: var(--border-h);
     color: var(--text);
     transform: translateY(-1px);
