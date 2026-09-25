@@ -23,6 +23,21 @@ themeBtn.addEventListener('click', () => {
     setTheme(getTheme() === 'dark' ? 'light' : 'dark');
 });
 
+// ===== Lang Popover =====
+const langPopover = document.getElementById('lang-popover');
+if (langPopover) {
+    if (localStorage.getItem('lang-popover-closed')) {
+        langPopover.classList.add('hidden');
+    }
+    const closeBtn = langPopover.querySelector('.close-popover');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            langPopover.classList.add('hidden');
+            localStorage.setItem('lang-popover-closed', 'true');
+        });
+    }
+}
+
 // ===== Nav scroll =====
 const nav = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
