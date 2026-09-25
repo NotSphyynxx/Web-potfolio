@@ -1,32 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ismail Larhrib — Full-Stack Engineer</title>
-    <meta name="description" content="Ismail Larhrib — Full-Stack Software Engineer. React, Next.js, Nest.js, TypeScript, PostgreSQL. Builder of ASSAS, a production-grade SIEM platform. 1337 (UM6P/42 Network).">
+    <title>Ismail Larhrib — Software Engineer</title>
+    <meta name="description" content="Ismail Larhrib — Software Engineer. React, Next.js, Nest.js, TypeScript, PostgreSQL. Builder of ASSAS, a production-grade SIEM platform. 1337 (UM6P/42 Network).">
     <meta name="author" content="Ismail Larhrib">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://sphynx-portfolio.vercel.app/">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Ismail Larhrib — Full-Stack Engineer">
-    <meta property="og:description" content="Full-Stack Software Engineer building production-grade web platforms. React, Nest.js, TypeScript, PostgreSQL.">
-    <meta property="og:url" content="https://sphynx-portfolio.vercel.app/">
-    <meta property="og:image" content="https://sphynx-portfolio.vercel.app/me.jpg">
+    <meta property="og:title" content="Ismail Larhrib — Software Engineer">
+    <meta property="og:description" content="Software Engineer building production-grade web platforms. React, Nest.js, TypeScript, PostgreSQL.">
+    <meta property="og:image" content="me.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl0GPmkFJ7+0ydLjSMdO0bkEbAUCWHA30b1bQWncdS7eJ4E5uWZKFxsIk21voMfMcKnflcii4dQA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;550;600;650;700;750;800;850&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-inner">
-            <a href="#hero" class="nav-logo">ismail<span>.</span>dev</a>
+            <a href="#hero" class="nav-logo">ismail<span>.dev</span></a>
             <div class="nav-links" id="nav-links">
                 <a href="#about">About</a>
                 <a href="#stack">Stack</a>
@@ -35,38 +32,43 @@
                 <a href="#journey">1337</a>
                 <a href="#contact">Contact</a>
             </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero -->
+    <!-- ========== HERO ========== -->
     <section id="hero" class="hero">
         <div class="container">
             <div class="hero-grid">
-                <div class="hero-left">
-                    <div class="hero-label">
+                <div>
+                    <div class="hero-overline">
                         <span class="dot"></span>
-                        Open to opportunities
+                        Available for opportunities
                     </div>
-                    <h1>Ismail<br>Larhrib<span class="accent">.</span></h1>
+                    <h1>Ismail<br>Larhrib<span class="gradient">.</span></h1>
                     <p class="hero-desc">
-                        Full-stack engineer specializing in building scalable web platforms from the ground up.
-                        Currently finishing the 42 Common Core at 1337 (UM6P), where I shipped a production-grade
-                        SIEM tool as my capstone project.
+                        Software engineer with a background in systems programming and full-stack web development.
+                        I build things that work at scale — from low-level C infrastructure to real-time web platforms.
+                        Currently wrapping up the <strong>42 Common Core</strong> at <strong>1337 (UM6P)</strong>,
+                        where I architected a production-grade SIEM tool as my capstone.
                     </p>
-                    <div class="hero-links">
-                        <a href="#assas" class="btn btn-primary">
-                            <span>View ASSAS</span>
-                            <i class="fas fa-arrow-down" style="font-size: 0.75rem;"></i>
+                    <div class="hero-actions">
+                        <a href="#assas" class="btn btn-accent">
+                            View ASSAS
+                            <i class="fas fa-arrow-down" style="font-size:0.7rem;"></i>
                         </a>
-                        <a href="https://github.com/NotSphyynxx" target="_blank" class="btn btn-outline">
-                            <i class="fab fa-github" style="font-size: 0.9rem;"></i>
-                            <span>GitHub</span>
+                        <a href="https://github.com/NotSphyynxx" target="_blank" class="btn btn-ghost">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
-                        <a href="https://sphynx-blogs.vercel.app" target="_blank" class="btn btn-outline">
-                            <span>Blog</span>
+                        <a href="https://sphynx-blogs.vercel.app" target="_blank" class="btn btn-ghost">
+                            Blog
                         </a>
                     </div>
                 </div>
@@ -77,268 +79,301 @@
         </div>
     </section>
 
-    <!-- About -->
+    <!-- ========== ABOUT ========== -->
     <section id="about">
         <div class="container">
-            <div class="section-label">About</div>
-            <h2 class="section-title">Background</h2>
-            <div class="about-content fade-up">
+            <span class="label">About</span>
+            <h2 class="title">Background</h2>
+            <div class="about-grid reveal">
                 <div class="about-text">
                     <p>
-                        I'm a software engineering student at 1337 Coding School (UM6P / 42 Network) in Casablanca, Morocco.
-                        Over two years of the 42 curriculum, I progressed from low-level C systems programming through
-                        C++ object-oriented design and into full-stack web development with modern frameworks.
+                        I'm a software engineering student at <strong>1337 Coding School</strong> (UM6P / 42 Network)
+                        in Casablanca, Morocco. Over two years of the 42 curriculum, I went from writing memory allocators
+                        in C to shipping full-stack web platforms with React, Nest.js, and PostgreSQL.
                     </p>
                     <p>
-                        My capstone project, <strong>ASSAS</strong>, is a complete SIEM platform I architected and built
-                        from scratch — real-time event ingestion, alert engine, incident management with Kanban workflows,
-                        threat intelligence feeds, and a custom C++ endpoint agent. The full stack runs on React, Nest.js,
-                        PostgreSQL, Redis, and Docker.
+                        My capstone project — <strong>ASSAS</strong> — is a complete SIEM platform I designed and built from
+                        scratch: real-time event ingestion via WebSocket, a correlation-based alert engine, Kanban incident
+                        management, threat intelligence feeds (MISP/STIX), team chat with war rooms, and a custom C++ endpoint agent.
+                        Nine Docker services orchestrated with Compose.
                     </p>
                     <p>
-                        Outside of 1337, I've built and shipped several commercial web applications, including e-commerce
-                        platforms and digital marketplaces. I also compete in DFIR and CTF events with my team MIR4GE.
+                        Outside of school, I've shipped commercial web apps (e-commerce, digital marketplaces, automation tools)
+                        and I compete in DFIR and CTF events as the founder of <strong>MIR4GE</strong>.
                     </p>
                 </div>
-                <div class="about-details">
-                    <div class="detail-item">
-                        <div class="detail-label">Location</div>
-                        <div class="detail-value">Casablanca, Morocco</div>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="about-card-label">Location</div>
+                        <div class="about-card-val">Casablanca, Morocco</div>
                     </div>
-                    <div class="detail-item">
-                        <div class="detail-label">School</div>
-                        <div class="detail-value">1337 (UM6P / 42)</div>
+                    <div class="about-card">
+                        <div class="about-card-label">School</div>
+                        <div class="about-card-val">1337 (UM6P / 42)</div>
                     </div>
-                    <div class="detail-item">
-                        <div class="detail-label">Focus</div>
-                        <div class="detail-value">Full-Stack Engineering</div>
+                    <div class="about-card">
+                        <div class="about-card-label">Focus</div>
+                        <div class="about-card-val">Software Engineering</div>
                     </div>
-                    <div class="detail-item">
-                        <div class="detail-label">Team</div>
-                        <div class="detail-value">MIR4GE (Founder)</div>
+                    <div class="about-card">
+                        <div class="about-card-label">Team</div>
+                        <div class="about-card-val">MIR4GE (Founder)</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stack -->
+    <!-- ========== STACK ========== -->
     <section id="stack">
         <div class="container">
-            <div class="section-label">Technical Stack</div>
-            <h2 class="section-title">What I work with</h2>
-            <p class="section-desc">End-to-end web development, systems programming, and infrastructure.</p>
-            <div class="stack-grid fade-up">
-                <div class="stack-card">
+            <span class="label">Technical Stack</span>
+            <h2 class="title">What I work with</h2>
+            <p class="desc">End-to-end development — frontend interfaces, backend APIs, databases, infrastructure.</p>
+
+            <div class="stack-row">
+                <div class="stack-block reveal">
                     <h3>Frontend</h3>
-                    <div class="stack-tags">
-                        <span class="stack-tag">React</span>
-                        <span class="stack-tag">Next.js</span>
-                        <span class="stack-tag">TypeScript</span>
-                        <span class="stack-tag">TailwindCSS</span>
-                        <span class="stack-tag">HTML / CSS</span>
-                        <span class="stack-tag">JavaScript</span>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">TailwindCSS</span>
+                        <span class="tag">HTML / CSS</span>
+                        <span class="tag">JavaScript</span>
                     </div>
                 </div>
-                <div class="stack-card">
+                <div class="stack-block reveal reveal-delay-1">
                     <h3>Backend</h3>
-                    <div class="stack-tags">
-                        <span class="stack-tag">Nest.js</span>
-                        <span class="stack-tag">PostgreSQL</span>
-                        <span class="stack-tag">Supabase</span>
-                        <span class="stack-tag">Redis</span>
-                        <span class="stack-tag">Socket.io</span>
-                        <span class="stack-tag">BullMQ</span>
+                    <div class="tags">
+                        <span class="tag">Nest.js</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Supabase</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">Socket.io</span>
+                        <span class="tag">BullMQ</span>
                     </div>
                 </div>
-                <div class="stack-card">
+                <div class="stack-block reveal reveal-delay-2">
                     <h3>Systems & DevOps</h3>
-                    <div class="stack-tags">
-                        <span class="stack-tag">C</span>
-                        <span class="stack-tag">C++</span>
-                        <span class="stack-tag">Python</span>
-                        <span class="stack-tag">Docker</span>
-                        <span class="stack-tag">Linux</span>
-                        <span class="stack-tag secondary">Nginx</span>
-                        <span class="stack-tag secondary">Git</span>
-                        <span class="stack-tag secondary">Bash</span>
+                    <div class="tags">
+                        <span class="tag">C</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag muted">Nginx</span>
+                        <span class="tag muted">Git</span>
+                        <span class="tag muted">Bash</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ASSAS -->
+    <!-- ========== ASSAS SIEM ========== -->
     <section id="assas" class="featured">
         <div class="container">
-            <div class="featured-header fade-up">
-                <div>
-                    <div class="section-label">Featured Project — ft_transcendence Capstone</div>
-                    <h2 class="featured-title">ASSAS<span> SIEM</span></h2>
-                    <p class="featured-subtitle">
-                        A production-grade Security Information and Event Management platform.
-                        Built from scratch as the 42 capstone project (ft_transcendence). Covers the full SOC workflow —
-                        from raw event ingestion to alert triage, incident resolution, threat intelligence, and real-time team communication.
-                    </p>
-                    <div class="featured-tech">
-                        <span class="stack-tag">React</span>
-                        <span class="stack-tag">Nest.js</span>
-                        <span class="stack-tag">TypeScript</span>
-                        <span class="stack-tag">PostgreSQL</span>
-                        <span class="stack-tag">Redis</span>
-                        <span class="stack-tag">Socket.io</span>
-                        <span class="stack-tag">BullMQ</span>
-                        <span class="stack-tag">Docker Compose</span>
-                        <span class="stack-tag">C++ Agent</span>
-                    </div>
+            <div class="featured-head reveal">
+                <div class="featured-top">
+                    <span class="label">Featured — ft_transcendence Capstone</span>
+                    <span class="featured-badge">9 Services</span>
                 </div>
-                <span class="featured-badge">9 Microservices</span>
+                <h2>ASSAS <span class="gradient">SIEM</span></h2>
+                <p class="featured-desc">
+                    A production-grade Security Information and Event Management platform, built from scratch
+                    as the 42 capstone project. Covers the entire SOC analyst workflow — from raw endpoint
+                    telemetry ingestion to alert triage, incident resolution, threat intelligence correlation,
+                    and real-time team coordination. Nine containerized services orchestrated via Docker Compose.
+                </p>
+                <div class="featured-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Nest.js</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">Socket.io</span>
+                    <span class="tag">BullMQ</span>
+                    <span class="tag">Docker Compose</span>
+                    <span class="tag">C++ Agent</span>
+                </div>
             </div>
 
-            <div class="modules-grid fade-up">
-                <!-- Part 1 -->
-                <div class="module-card">
-                    <div class="module-num">01</div>
+            <div class="modules">
+                <div class="mod reveal">
+                    <div class="mod-num">01</div>
                     <h4>Auth & Core Infrastructure</h4>
-                    <p class="module-desc">
-                        Admin-provisioned accounts, RBAC with granular permissions, team management,
-                        immutable audit logging, WAF middleware (XSS, SQLi, path traversal), and Redis-backed rate limiting.
+                    <p class="mod-desc">
+                        Admin-provisioned user accounts (no self-registration). Role-based access control with granular
+                        permissions stored as JSON. Team management with leaders and members. Immutable audit trail logging.
+                        WAF middleware blocking XSS, SQL injection, and path traversal. Redis-backed rate limiting.
+                        Full Docker Compose orchestration for all 9 services.
                     </p>
-                    <div class="module-items">
-                        <span class="module-item">JWT Auth</span>
-                        <span class="module-item">RBAC</span>
-                        <span class="module-item">WAF</span>
-                        <span class="module-item">Audit Trail</span>
-                        <span class="module-item">Teams</span>
-                        <span class="module-item">Rate Limiting</span>
+                    <div class="mod-chips">
+                        <span class="mod-chip">JWT</span>
+                        <span class="mod-chip">RBAC</span>
+                        <span class="mod-chip">WAF</span>
+                        <span class="mod-chip">Audit Logs</span>
+                        <span class="mod-chip">Teams</span>
+                        <span class="mod-chip">Rate Limiting</span>
                     </div>
                 </div>
 
-                <!-- Part 2 -->
-                <div class="module-card">
-                    <div class="module-num">02</div>
+                <div class="mod reveal reveal-delay-1">
+                    <div class="mod-num">02</div>
                     <h4>Event Stream & Device Management</h4>
-                    <p class="module-desc">
-                        Agent registration with pre-shared token auth, high-throughput event ingestion API,
-                        real-time WebSocket broadcast, heartbeat monitoring, and offline detection with automatic alerting.
+                    <p class="mod-desc">
+                        Endpoint agent registration with pre-shared token authentication (DeviceAuthGuard). High-throughput
+                        event ingestion API with category typing and source IP tracking. Real-time event broadcast to all
+                        connected analysts via WebSocket (Socket.io). Heartbeat monitoring with configurable intervals.
+                        Automatic offline detection and alert generation when agents go silent.
                     </p>
-                    <div class="module-items">
-                        <span class="module-item">WebSocket</span>
-                        <span class="module-item">Agent Auth</span>
-                        <span class="module-item">Heartbeat</span>
-                        <span class="module-item">Event Ingestion</span>
-                        <span class="module-item">Real-time</span>
+                    <div class="mod-chips">
+                        <span class="mod-chip">WebSocket</span>
+                        <span class="mod-chip">Agent Auth</span>
+                        <span class="mod-chip">Heartbeat</span>
+                        <span class="mod-chip">Event Ingestion</span>
+                        <span class="mod-chip">Real-time Broadcast</span>
                     </div>
                 </div>
 
-                <!-- Part 3 -->
-                <div class="module-card">
-                    <div class="module-num">03</div>
+                <div class="mod reveal reveal-delay-2">
+                    <div class="mod-num">03</div>
                     <h4>Alert Engine & Incident Management</h4>
-                    <p class="module-desc">
-                        5-stage alert lifecycle, correlation rules engine, alert-to-ticket conversion, 6-stage
-                        incident workflow with Kanban board, SLA tracking, and auto-created war rooms per incident.
+                    <p class="mod-desc">
+                        5-stage alert lifecycle (New, Acknowledged, Investigating, Resolved, Closed) with severity levels
+                        and analyst assignment. CRUD correlation rules engine that evaluates incoming events against
+                        configurable patterns. Alert-to-ticket conversion. 6-stage incident ticket workflow
+                        (Backlog through Closed) with a full Kanban board UI, comments, history, and SLA tracking.
+                        Automatic war room (ChatRoom) creation per alert and ticket.
                     </p>
-                    <div class="module-items">
-                        <span class="module-item">State Machine</span>
-                        <span class="module-item">Kanban</span>
-                        <span class="module-item">Correlation Rules</span>
-                        <span class="module-item">SLA</span>
-                        <span class="module-item">War Rooms</span>
+                    <div class="mod-chips">
+                        <span class="mod-chip">State Machine</span>
+                        <span class="mod-chip">Kanban Board</span>
+                        <span class="mod-chip">Correlation Rules</span>
+                        <span class="mod-chip">SLA Tracking</span>
+                        <span class="mod-chip">War Rooms</span>
                     </div>
                 </div>
 
-                <!-- Part 4 -->
-                <div class="module-card">
-                    <div class="module-num">04</div>
+                <div class="mod reveal">
+                    <div class="mod-num">04</div>
                     <h4>Threat Intelligence & Chat</h4>
-                    <p class="module-desc">
-                        IoC database with automated feed ingestion (MISP, OTX, STIX/TAXII) via BullMQ background jobs,
-                        enrichment lookups, real-time team chat and war rooms with typing indicators via Socket.io.
+                    <p class="mod-desc">
+                        Indicator of Compromise database with typed entries, threat scores, and expiration tracking.
+                        Automated feed ingestion from MISP, AlienVault OTX, and STIX/TAXII sources via BullMQ background
+                        jobs. Enrichment lookups that match incoming events to known IoCs and auto-escalate severity.
+                        Real-time team chat and per-incident war rooms via Socket.io WebSocket with typing indicators
+                        and full message history search.
                     </p>
-                    <div class="module-items">
-                        <span class="module-item">MISP</span>
-                        <span class="module-item">STIX/TAXII</span>
-                        <span class="module-item">BullMQ</span>
-                        <span class="module-item">Real-time Chat</span>
-                        <span class="module-item">IoC Matching</span>
+                    <div class="mod-chips">
+                        <span class="mod-chip">MISP</span>
+                        <span class="mod-chip">STIX/TAXII</span>
+                        <span class="mod-chip">BullMQ Jobs</span>
+                        <span class="mod-chip">Real-time Chat</span>
+                        <span class="mod-chip">IoC Matching</span>
+                        <span class="mod-chip">Enrichment</span>
                     </div>
                 </div>
 
-                <!-- Part 5 -->
-                <div class="module-card">
-                    <div class="module-num">05</div>
-                    <h4>Dashboards, Reports & Agent</h4>
-                    <p class="module-desc">
-                        Widget-based dashboard system (9 widget types) with drag-and-drop layout, scheduled PDF/CSV reports,
-                        file management, and a custom C++ endpoint agent for metrics collection and log tailing.
+                <div class="mod reveal reveal-delay-1">
+                    <div class="mod-num">05</div>
+                    <h4>Dashboards, Reports & C++ Agent</h4>
+                    <p class="mod-desc">
+                        Widget-based custom dashboards with 9 widget types (event counter, alert list, severity chart,
+                        timeline, device status, incident board, threat map, activity feed, system health). Drag-and-drop
+                        layout with auto-refresh and team-level sharing. Scheduled PDF/CSV report generation linked to
+                        alerts and files. A custom C++ endpoint agent that collects system metrics, tails log files,
+                        sends heartbeats, and reports events back to the SIEM over the network.
                     </p>
-                    <div class="module-items">
-                        <span class="module-item">9 Widget Types</span>
-                        <span class="module-item">Drag & Drop</span>
-                        <span class="module-item">PDF Reports</span>
-                        <span class="module-item">C++ Agent</span>
-                        <span class="module-item">Prometheus</span>
+                    <div class="mod-chips">
+                        <span class="mod-chip">9 Widget Types</span>
+                        <span class="mod-chip">Drag & Drop</span>
+                        <span class="mod-chip">PDF/CSV Export</span>
+                        <span class="mod-chip">C++ Agent</span>
+                        <span class="mod-chip">Prometheus</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Other Projects -->
+    <!-- ========== OTHER PROJECTS ========== -->
     <section id="projects">
         <div class="container">
-            <div class="section-label">Other Work</div>
-            <h2 class="section-title">Selected Projects</h2>
-            <p class="section-desc">Full writeups available on my blog.</p>
-            <div class="projects-grid fade-up">
-                <a href="https://sphynx-blogs.vercel.app/posts/double-vision-ecommerce/" target="_blank" class="project-card">
-                    <div class="project-top">
-                        <span class="project-type">E-Commerce</span>
-                        <span class="project-arrow">&#8599;</span>
+            <span class="label">Other Work</span>
+            <h2 class="title">Selected Projects</h2>
+            <p class="desc">Shipped products and tools. Full writeups on my blog.</p>
+
+            <div class="proj-grid">
+                <a href="https://sphynx-blogs.vercel.app/posts/double-vision-ecommerce/" target="_blank" class="proj reveal">
+                    <div class="proj-top">
+                        <span class="proj-type">E-Commerce</span>
+                        <span class="proj-arrow">&#8599;</span>
                     </div>
                     <h3>Double Vision</h3>
-                    <p>Full-stack Moroccan e-commerce platform with WhatsApp-based ordering, admin panel, Jira-style task board, and volume discount engine. Built for non-tech-savvy customers.</p>
-                    <div class="project-stack">
+                    <p>
+                        Full-stack Moroccan e-commerce platform built for a seller targeting non-tech-savvy customers.
+                        WhatsApp-based ordering with a single tap, admin panel with a Jira-style Kanban task board,
+                        dynamic product catalogue, and a volume discount pricing engine. Cash on delivery flow,
+                        no payment gateway. Built with React, Supabase, and TailwindCSS.
+                    </p>
+                    <div class="proj-stack">
                         <span>React</span>
                         <span>Supabase</span>
                         <span>TailwindCSS</span>
                     </div>
                 </a>
-                <a href="https://sphynx-blogs.vercel.app/posts/doublevision-whatsapp-autoresponder/" target="_blank" class="project-card">
-                    <div class="project-top">
-                        <span class="project-type">Automation</span>
-                        <span class="project-arrow">&#8599;</span>
+
+                <a href="https://sphynx-blogs.vercel.app/posts/doublevision-whatsapp-autoresponder/" target="_blank" class="proj reveal reveal-delay-1">
+                    <div class="proj-top">
+                        <span class="proj-type">Automation</span>
+                        <span class="proj-arrow">&#8599;</span>
                     </div>
                     <h3>DV WhatsApp Auto-Responder</h3>
-                    <p>Automated WhatsApp agent for Moroccan e-commerce. Handles incoming ad campaign messages and sends instant product details, images, and pricing to customers.</p>
-                    <div class="project-stack">
+                    <p>
+                        Fully automated WhatsApp agent built for Moroccan e-commerce ad campaigns.
+                        Recognizes which product a customer is asking about from an incoming message,
+                        then instantly responds with product images, pricing, and purchase details —
+                        acting as a 24/7 first-responder that closes sales before a human even sees the message.
+                    </p>
+                    <div class="proj-stack">
                         <span>Node.js</span>
                         <span>WhatsApp API</span>
                         <span>Automation</span>
                     </div>
                 </a>
-                <a href="https://sphynx-blogs.vercel.app/posts/primevault-digital-marketplace/" target="_blank" class="project-card">
-                    <div class="project-top">
-                        <span class="project-type">Marketplace</span>
-                        <span class="project-arrow">&#8599;</span>
+
+                <a href="https://sphynx-blogs.vercel.app/posts/primevault-digital-marketplace/" target="_blank" class="proj reveal">
+                    <div class="proj-top">
+                        <span class="proj-type">Marketplace</span>
+                        <span class="proj-arrow">&#8599;</span>
                     </div>
                     <h3>PrimeVault</h3>
-                    <p>Digital goods marketplace with secure file delivery, payment integration, vendor dashboards, and automated order processing.</p>
-                    <div class="project-stack">
+                    <p>
+                        Digital goods marketplace with secure file delivery, Stripe payment integration,
+                        vendor dashboards with sales analytics, and automated order processing.
+                        Handles product listings, user accounts, purchase flows, and instant digital delivery.
+                    </p>
+                    <div class="proj-stack">
                         <span>Next.js</span>
                         <span>PostgreSQL</span>
                         <span>Stripe</span>
                     </div>
                 </a>
-                <a href="https://sphynx-blogs.vercel.app/posts/crimson-roleplay-webapp/" target="_blank" class="project-card">
-                    <div class="project-top">
-                        <span class="project-type">Community Platform</span>
-                        <span class="project-arrow">&#8599;</span>
+
+                <a href="https://sphynx-blogs.vercel.app/posts/crimson-roleplay-webapp/" target="_blank" class="proj reveal reveal-delay-1">
+                    <div class="proj-top">
+                        <span class="proj-type">Community Platform</span>
+                        <span class="proj-arrow">&#8599;</span>
                     </div>
                     <h3>Crimson Roleplay</h3>
-                    <p>Full web application for a gaming community. User management, application system, staff dashboards, and real-time community features.</p>
-                    <div class="project-stack">
+                    <p>
+                        Web application for a FiveM gaming community. Features user registration and management,
+                        application/whitelist system, staff dashboards with moderation tools, and real-time
+                        community features. Serves hundreds of active players.
+                    </p>
+                    <div class="proj-stack">
                         <span>HTML/CSS/JS</span>
                         <span>Lua</span>
                         <span>FiveM</span>
@@ -348,93 +383,94 @@
         </div>
     </section>
 
-    <!-- 1337 Journey -->
+    <!-- ========== 1337 JOURNEY ========== -->
     <section id="journey">
         <div class="container">
-            <div class="section-label">42 / 1337 Curriculum</div>
-            <h2 class="section-title">Common Core</h2>
-            <p class="section-desc">Two years of systems programming, algorithms, and software architecture at 1337 Coding School.</p>
-            <div class="journey-timeline fade-up">
-                <div class="rank-block">
-                    <div class="rank-label">Rank 0–1</div>
-                    <div class="rank-title">Foundations</div>
+            <span class="label">42 / 1337 Curriculum</span>
+            <h2 class="title">Common Core</h2>
+            <p class="desc">Two years of systems programming, algorithms, and software architecture at 1337 Coding School.</p>
+
+            <div class="timeline reveal">
+                <div class="rank">
+                    <div class="rank-num">Rank 0–1</div>
+                    <div class="rank-name">Foundations</div>
                     <div class="rank-items">
-                        <span class="rank-item">Libft</span>
-                        <span class="rank-item">ft_printf</span>
-                        <span class="rank-item">get_next_line</span>
-                        <span class="rank-item">Born2beroot</span>
+                        <span class="rank-pill">Libft</span>
+                        <span class="rank-pill">ft_printf</span>
+                        <span class="rank-pill">get_next_line</span>
+                        <span class="rank-pill">Born2beroot</span>
                     </div>
                 </div>
-                <div class="rank-block">
-                    <div class="rank-label">Rank 2</div>
-                    <div class="rank-title">Algorithms & Graphics</div>
+
+                <div class="rank">
+                    <div class="rank-num">Rank 2</div>
+                    <div class="rank-name">Algorithms & Graphics</div>
                     <div class="rank-items">
-                        <span class="rank-item">push_swap</span>
-                        <span class="rank-item">so_long</span>
-                        <span class="rank-item">pipex</span>
+                        <span class="rank-pill">push_swap</span>
+                        <span class="rank-pill">so_long</span>
+                        <span class="rank-pill">pipex</span>
                     </div>
                 </div>
-                <div class="rank-block">
-                    <div class="rank-label">Rank 3</div>
-                    <div class="rank-title">Concurrency & Shell</div>
+
+                <div class="rank">
+                    <div class="rank-num">Rank 3</div>
+                    <div class="rank-name">Concurrency & Shell</div>
                     <div class="rank-items">
-                        <span class="rank-item">Minishell</span>
-                        <span class="rank-item">Philosophers</span>
-                        <span class="rank-item">NetPractice</span>
+                        <span class="rank-pill">Minishell</span>
+                        <span class="rank-pill">Philosophers</span>
+                        <span class="rank-pill">NetPractice</span>
                     </div>
                 </div>
-                <div class="rank-block">
-                    <div class="rank-label">Rank 4</div>
-                    <div class="rank-title">C++ & Networking</div>
+
+                <div class="rank">
+                    <div class="rank-num">Rank 4</div>
+                    <div class="rank-name">C++ & Networking</div>
                     <div class="rank-items">
-                        <span class="rank-item">CPP 00–04</span>
-                        <span class="rank-item">cub3D</span>
-                        <span class="rank-item">NetPractice</span>
+                        <span class="rank-pill">CPP 00–04</span>
+                        <span class="rank-pill">cub3D</span>
                     </div>
                 </div>
-                <div class="rank-block">
-                    <div class="rank-label">Rank 5</div>
-                    <div class="rank-title">Advanced C++ & Infrastructure</div>
+
+                <div class="rank">
+                    <div class="rank-num">Rank 5</div>
+                    <div class="rank-name">Advanced C++ & Infrastructure</div>
                     <div class="rank-items">
-                        <span class="rank-item">CPP 05–09</span>
-                        <span class="rank-item">ft_irc</span>
-                        <span class="rank-item">Inception</span>
+                        <span class="rank-pill">CPP 05–09</span>
+                        <span class="rank-pill">ft_irc</span>
+                        <span class="rank-pill">Inception</span>
                     </div>
                 </div>
-                <div class="rank-block">
-                    <div class="rank-label">Rank 6</div>
-                    <div class="rank-title">Web Architecture & SIEM</div>
+
+                <div class="rank">
+                    <div class="rank-num">Rank 6</div>
+                    <div class="rank-name">Web Architecture & SIEM</div>
                     <div class="rank-items">
-                        <span class="rank-item">ft_transcendence (ASSAS)</span>
-                        <span class="rank-item">Exam 06</span>
+                        <span class="rank-pill">ft_transcendence (ASSAS)</span>
+                        <span class="rank-pill">Exam 06</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- ========== CONTACT ========== -->
     <section id="contact">
-        <div class="container contact-section">
-            <div class="section-label">Contact</div>
-            <h2 class="section-title">Get in touch</h2>
-            <p class="section-desc">Open for full-stack engineering roles, freelance projects, or technical collaborations.</p>
-            <div class="contact-links fade-up">
-                <a href="mailto:larhribismail87@gmail.com" class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <span>larhribismail87@gmail.com</span>
+        <div class="container contact-wrap">
+            <span class="label">Contact</span>
+            <h2 class="title">Get in touch</h2>
+            <p class="desc">Open for software engineering roles, freelance projects, or technical collaborations.</p>
+            <div class="contact-row reveal">
+                <a href="mailto:larhribismail87@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i> larhribismail87@gmail.com
                 </a>
-                <a href="https://github.com/NotSphyynxx" target="_blank" class="contact-card">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
+                <a href="https://github.com/NotSphyynxx" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i> GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/ismail-larhrib-b5291932a" target="_blank" class="contact-card">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/ismail-larhrib-b5291932a" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                <a href="https://sphynx-blogs.vercel.app" target="_blank" class="contact-card">
-                    <i class="fas fa-pen-nib"></i>
-                    <span>Blog</span>
+                <a href="https://sphynx-blogs.vercel.app" target="_blank" class="contact-item">
+                    <i class="fas fa-pen-nib"></i> Blog
                 </a>
             </div>
         </div>
